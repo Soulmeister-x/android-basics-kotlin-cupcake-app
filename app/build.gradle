@@ -64,16 +64,20 @@ dependencies {
     // Feature module Support
     implementation "androidx.navigation:navigation-dynamic-features-fragment:$nav_version"
 
-    // Testing Navigation
-    androidTestImplementation "androidx.navigation:navigation-testing:$nav_version"
+    // Core library
+    androidTestImplementation "androidx.test:core:1.5.0"
 
-    def androidXTestVersion = "1.5.1"
-    androidTestImplementation "androidx.test:runner:$androidXTestVersion"
-    androidTestImplementation "androidx.test:rules:$androidXTestVersion"
+    // AndroidJUnitRunner and JUnit Rules
+    androidTestImplementation "androidx.test:runner:1.5.1"
+    androidTestImplementation "androidx.test:rules:1.5.0"
+
+    // Assertions
+    androidTestImplementation "androidx.test.ext:junit:1.1.4"
+    androidTestImplementation "androidx.test.ext:truth:1.5.0"
 
     // UI Test with espresso
     androidTestImplementation "androidx.test.espresso:espresso-core:3.5.0"
 
-
+    debugImplementation "androidx.fragment:fragment-testing:1.5.5"
 
 }
