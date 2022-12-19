@@ -65,7 +65,7 @@ dependencies {
     implementation "androidx.navigation:navigation-dynamic-features-fragment:$nav_version"
 
     // Core library
-    androidTestImplementation "androidx.test:core:1.5.0"
+    //androidTestImplementation "androidx.test:core:1.5.0"
 
     // AndroidJUnitRunner and JUnit Rules
     androidTestImplementation "androidx.test:runner:1.5.1"
@@ -76,7 +76,11 @@ dependencies {
     androidTestImplementation "androidx.test.ext:truth:1.5.0"
 
     // UI Test with espresso
-    androidTestImplementation "androidx.test.espresso:espresso-core:3.5.0"
+//    androidTestImplementation "androidx.test.espresso:espresso-co"
+
+    androidTestImplementation "androidx.test.ext:junit:1.1.4"
+    androidTestImplementation "com.android.support.test.espresso:espresso-contrib:3.0.2"
+    androidTestImplementation "androidx.navigation:navigation-testing:2.5.3"
 
     debugImplementation "androidx.fragment:fragment-testing:1.5.5"
 
